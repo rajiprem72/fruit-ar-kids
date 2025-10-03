@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit AR Learning 🍎🍌🍇</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fef9f6;
+      margin: 0;
+      text-align: center;
+    }
+    header {
+      background: #ffb347;
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+    }
+    .card h2 {
+      margin: 10px 0;
+      color: #ff7043;
+    }
+    model-viewer {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+    footer {
+      background: #ffb347;
+      padding: 15px;
+      margin-top: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🍎 AR Fruits for Kids 🍌</header>
+
+  <div class="grid">
+    <!-- Example: Apple -->
+    <div class="card">
+      <h2>Apple</h2>
+      <model-viewer src="models/apple.glb" alt="3D model of Apple" ar ar-modes="webxr scene-viewer quick-look" 
+        camera-controls auto-rotate></model-viewer>
+    </div>
+
+    <div class="card">
+      <h2>Banana</h2>
+      <model-viewer src="models/banana.glb" alt="3D model of Banana" ar ar-modes="webxr scene-viewer quick-look" 
+        camera-controls auto-rotate></model-viewer>
+    </div>
+
+    <div class="card">
+      <h2>Grapes</h2>
+      <model-viewer src="models/grape.glb" alt="3D model of Grapes" ar camera-controls auto-rotate></model-viewer>
+    </div>
+
+    <div class="card">
+      <h2>Jackfruit</h2>
+      <model-viewer src="models/jackfruit.glb" alt="3D model of Jackfruit" ar camera-controls auto-rotate></model-viewer>
+    </div>
+
+    <div class="card">
+      <h2>Mango</h2>
+      <model-viewer src="models/mango.glb" alt="3D model of Mango" ar camera-controls auto-rotate></model-viewer>
+    </div>
+
+    <div class="card">
+      <h2>Orange</h2>
+      <model-viewer src="models/orange.glb" alt="3D model of Orange" ar camera-controls auto-rotate></model-viewer>
+    </div>
+
+    <div class="card">
+      <h2>Papaya</h2>
+      <model-viewer src="models/papaya.glb" alt="3D model of Papaya" ar camera-controls auto-rotate></model-viewer>
+    </div>
+
+    <div class="card">
+      <h2>Pineapple</h2>
+      <model-viewer src="models/pineapple.glb" alt="3D model of Pineapple" ar camera-controls auto-rotate></model-viewer>
+    </div>
+
+    <div class="card">
+      <h2>Pomegranate</h2>
+      <model-viewer src="models/pomegranate.glb" alt="3D model of Pomegranate" ar camera-controls auto-rotate></model-viewer>
+    </div>
+
+    <div class="card">
+      <h2>Strawberry</h2>
+      <model-viewer src="models/strawberry.glb" alt="3D model of Strawberry" ar camera-controls auto-rotate></model-viewer>
+    </div>
+  </div>
+
+  <footer>
+    Made with ❤️ for Kids | <a href="https://github.com/your-username/fruit-ar-kids" target="_blank" style="color:white;">View on GitHub</a>
+  </footer>
+
+</body>
+</html>
